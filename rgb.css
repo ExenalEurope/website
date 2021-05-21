@@ -1,0 +1,58 @@
+
+body {
+  background: black;
+  text-align: center;
+  padding: 60px;
+  font-family: sans-serif; 
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.grid-container {   
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+ 
+.button{   
+  outline-width: 0;
+  height: 50px;
+  width:  50px;  
+  border: none; 
+  margin: -1px; 
+  text-decoration: none; 
+  background: rgba(18, 18, 18); 
+  border-radius: 0px;   
+}
+
+@keyframes random {
+    0% { background-color: #fc0394; box-shadow: 0 0px 110px 30px #fc0394,0 0px 15px 4px #fc0394;  } 
+    16% { background-color: #fc9d03; box-shadow: 0 0px 110px 30px #fc9d03,0 0px 15px 4px #fc9d03;  } 
+    32% { background-color: #5afc03; box-shadow: 0 0px 110px 30px #5afc03,0 0px 15px 4px #5afc03;  } 
+    48% { background-color: #03fcf4; box-shadow: 0 0px 110px 30px #03fcf4,0 0px 15px 4px #03fcf4;  } 
+    64% { background-color: #6703fc; box-shadow: 0 0px 110px 30px #6703fc,0 0px 15px 4px #6703fc;  }
+    80% { background-color: #fc038c; box-shadow: 0 0px 110px 30px #fc038c,0 0px 15px 4px #fc038c;  }  
+    94% { background-color: #0b03fc; box-shadow: 0 0px 110px 30px #0b03fc,0 0px 15px 4px #0b03fc;  }  
+    100% { background-color: #fc0394; box-shadow: 0 0px 110px 30px #fc0394,0 0px 15px 4px #fc0394;  }  
+}
+
+.glowButton{  
+ outline-width: 0;
+ position: relative;
+ background: none;
+ color: inherit;
+ border: none; 
+ font: inherit;
+ cursor: pointer;
+ border-radius: 0px;  
+ outline: inherit;
+  -webkit-animation: random 4s infinite; 
+  animation: random 4s infinite;  
+  transition: all 3s ease-out;
+  animation-delay: -1s; 
+} 
